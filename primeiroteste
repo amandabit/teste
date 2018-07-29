@@ -1,0 +1,63 @@
+from graphics import* 
+import random
+win = GraphWin("Aprendendo graphics", 525,475)
+color_background = win.setBackground('white')
+quadrantes = []
+img = Image(Point(37.5,137.5),"carro1.gif")
+img.draw(win)
+
+def main(): 
+    global win
+    global quadrantes
+    # fazendo quadrantes
+    linha = Line(Point(75,100), Point(75,475))#primeira coluna
+    linha.draw(win)
+	
+    linha = Line(Point(150,100), Point(150,475))#segunda coluna
+    linha.draw(win)
+    
+    linha = Line(Point(225,100), Point(225,475))#terceira coluna
+    linha.draw(win)
+    
+    linha = Line(Point(300,100), Point(300,475))#quarta coluna
+    linha.draw(win)
+
+    linha = Line(Point(375,100), Point(375,475))#quinta coluna
+    linha.draw(win)
+    
+    linha = Line(Point(450,100), Point(450,475))#sexta coluna
+    linha.draw(win)
+
+    linha = Line(Point(525,100), Point(525,475))#setima coluna
+    linha.draw(win)
+
+    linha = Line(Point(0,100), Point(525,100)) #primeira linha
+    linha.draw(win)
+    
+    linha = Line(Point(0,175), Point(525,175)) #segunda linha
+    linha.draw(win)
+    
+    linha = Line(Point(0,250), Point(525,250))#terceira linha
+    linha.draw(win)
+    
+    linha = Line(Point(0,325), Point(525,325))#quarta linha
+    linha.draw(win) 
+    
+    linha = Line(Point(0,400), Point(525,400)) #quinta linha
+    linha.draw(win)
+
+    linha = Line(Point(0,475), Point(525,475)) #sexta linha
+    linha.draw(win)
+    
+    for i in range(35):
+        n = random.randint(1,5)
+        quadrantes.append(n)
+    print(quadrantes)
+    
+    
+#para fechar    
+    win.getMouse()
+    win.close()
+    
+    
+main()
