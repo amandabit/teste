@@ -916,45 +916,57 @@ def main():
     global quadrantes
     global img
 
-    # fazendo quadrantes
-    linha = Line(Point(75,325), Point(75,700))#primeira coluna
-    linha.draw(win)
-	
-    linha = Line(Point(150,325), Point(150,700))#segunda coluna
-    linha.draw(win)
-    
-    linha = Line(Point(225,325), Point(225,700))#terceira coluna
-    linha.draw(win)
-    
-    linha = Line(Point(300,325), Point(300,700))#quarta coluna
-    linha.draw(win)
+# fazendo quadrantes
 
-    linha = Line(Point(375,325), Point(375,700))#quinta coluna
-    linha.draw(win)
-    
-    linha = Line(Point(450,325), Point(450,700))#sexta coluna
-    linha.draw(win)
+linha = Line(Point(0, 325), Point(0, 700))  # primeira coluna
+linha.draw(win)
 
-    linha = Line(Point(525,325), Point(525,700))#setima coluna
-    linha.draw(win)
+linha = Line(Point(75, 240), Point(75, 700))  # primeira coluna heroi
+linha.draw(win)
 
-    linha = Line(Point(0,325), Point(525,325)) #primeira linha
-    linha.draw(win)
-    
-    linha = Line(Point(0,400), Point(525,400)) #segunda linha
-    linha.draw(win)
-    
-    linha = Line(Point(0,475), Point(525,475))#terceira linha
-    linha.draw(win)
-    
-    linha = Line(Point(0,550), Point(525,550))#quarta linha
-    linha.draw(win) 
-    
-    linha = Line(Point(0,625), Point(525,625)) #quinta linha
-    linha.draw(win)
+linha = Line(Point(150, 240), Point(150, 700))  # segunda coluna
+linha.draw(win)
 
-    linha = Line(Point(0,700), Point(525,700)) #sexta linha
-    linha.draw(win)
+linha = Line(Point(225, 240), Point(225, 700))  # terceira coluna
+linha.draw(win)
+
+linha = Line(Point(300, 240), Point(300, 700))  # quarta coluna
+linha.draw(win)
+
+linha = Line(Point(375, 240), Point(375, 700))  # quinta coluna
+linha.draw(win)
+
+linha = Line(Point(450, 240), Point(450, 700))  # ultima coluna heroi
+linha.draw(win)
+
+linha = Line(Point(525, 325), Point(525, 700))  # setima coluna
+linha.draw(win)
+
+
+linha = Line(Point(75, 240), Point(450, 240))  # primeira linha heroi
+linha.draw(win)
+
+linha = Line(Point(75, 315), Point(450, 315))  # segunda linha heroi mana
+linha.draw(win)
+
+linha = Line(Point(0, 325), Point(525, 325))  # primeira linha
+linha.draw(win)
+
+linha = Line(Point(0, 400), Point(525, 400))  # segunda linha
+linha.draw(win)
+
+linha = Line(Point(0, 475), Point(525, 475))  # terceira linha
+linha.draw(win)
+
+linha = Line(Point(0, 550), Point(525, 550))  # quarta linha
+linha.draw(win)
+
+linha = Line(Point(0, 625), Point(525, 625))  # quinta linha
+linha.draw(win)
+
+linha = Line(Point(0, 700), Point(525, 700))  # sexta linha
+linha.draw(win)
+
 #fazendo o sorteio da distribuicao das bolinhas
     for i in range(35):
         n = random.randint(1,5)
