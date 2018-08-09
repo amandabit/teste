@@ -1,8 +1,9 @@
 
+
 from graphics import* 
 import random
 
-win = GraphWin("Aprendendo graphics", 525,475)
+win = GraphWin("Aprendendo graphics", 525,700)
 color_background = win.setBackground('white')
 quadrantes = []
 img = []
@@ -916,43 +917,43 @@ def main():
     global img
 
     # fazendo quadrantes
-    linha = Line(Point(75,100), Point(75,475))#primeira coluna
+    linha = Line(Point(75,325), Point(75,700))#primeira coluna
     linha.draw(win)
 	
-    linha = Line(Point(150,100), Point(150,475))#segunda coluna
+    linha = Line(Point(150,325), Point(150,700))#segunda coluna
     linha.draw(win)
     
-    linha = Line(Point(225,100), Point(225,475))#terceira coluna
+    linha = Line(Point(225,325), Point(225,700))#terceira coluna
     linha.draw(win)
     
-    linha = Line(Point(300,100), Point(300,475))#quarta coluna
+    linha = Line(Point(300,325), Point(300,700))#quarta coluna
     linha.draw(win)
 
-    linha = Line(Point(375,100), Point(375,475))#quinta coluna
+    linha = Line(Point(375,325), Point(375,700))#quinta coluna
     linha.draw(win)
     
-    linha = Line(Point(450,100), Point(450,475))#sexta coluna
+    linha = Line(Point(450,325), Point(450,700))#sexta coluna
     linha.draw(win)
 
-    linha = Line(Point(525,100), Point(525,475))#setima coluna
+    linha = Line(Point(525,325), Point(525,700))#setima coluna
     linha.draw(win)
 
-    linha = Line(Point(0,100), Point(525,100)) #primeira linha
+    linha = Line(Point(0,325), Point(525,325)) #primeira linha
     linha.draw(win)
     
-    linha = Line(Point(0,175), Point(525,175)) #segunda linha
+    linha = Line(Point(0,400), Point(525,400)) #segunda linha
     linha.draw(win)
     
-    linha = Line(Point(0,250), Point(525,250))#terceira linha
+    linha = Line(Point(0,475), Point(525,475))#terceira linha
     linha.draw(win)
     
-    linha = Line(Point(0,325), Point(525,325))#quarta linha
+    linha = Line(Point(0,550), Point(525,550))#quarta linha
     linha.draw(win) 
     
-    linha = Line(Point(0,400), Point(525,400)) #quinta linha
+    linha = Line(Point(0,625), Point(525,625)) #quinta linha
     linha.draw(win)
 
-    linha = Line(Point(0,475), Point(525,475)) #sexta linha
+    linha = Line(Point(0,700), Point(525,700)) #sexta linha
     linha.draw(win)
 #fazendo o sorteio da distribuicao das bolinhas
     for i in range(35):
@@ -965,546 +966,546 @@ def main():
 #fazendo a primeira distribuicao de bolinhas
     for y in range (35):
         if quadrantes[0] == 1:
-            img[0] = Image(Point(37.5,137.5),"carro1.gif")
+            img[0] = Image(Point(37.5,362.5),"carro1.gif")
             img[0].draw(win)
         if quadrantes[0] == 2:
-            img[0] = Image(Point(37.5,137.5), "bege.gif")
+            img[0] = Image(Point(37.5,362.5), "bege.gif")
             img[0].draw(win)
         if quadrantes[0] == 3:
-            img[0] = Image(Point(37.5,137.5), "cinza.gif")
+            img[0] = Image(Point(37.5,362.5), "cinza.gif")
             img[0].draw(win)
         if quadrantes[0] == 4:
-            img[0] = Image(Point(37.5,137.5), "carro2.gif")
+            img[0] = Image(Point(37.5,362.5), "carro2.gif")
             img[0].draw(win)
         if quadrantes[0] == 5:
-            img[0] = Image(Point(37.5,137.5), "marrom.gif")
+            img[0] = Image(Point(37.5,362.5), "marrom.gif")
             img[0].draw(win)
 
         if quadrantes[1] == 1:
-            img[1] = Image(Point(112.5,137.5),"carro1.gif")
+            img[1] = Image(Point(112.5,362.5),"carro1.gif")
             img[1].draw(win)
         if quadrantes[1] == 2:
-            img[1] = Image(Point(112.5,137.5), "bege.gif")
+            img[1] = Image(Point(112.5,362.5), "bege.gif")
             img[1].draw(win)
         if quadrantes[1] == 3:
-            img[1] = Image(Point(112.5,137.5), "cinza.gif")
+            img[1] = Image(Point(112.5,362.5), "cinza.gif")
             img[1].draw(win)
         if quadrantes[1] == 4:
-            img[1] = Image(Point(112.5,137.5), "carro2.gif")
+            img[1] = Image(Point(112.5,362.5), "carro2.gif")
             img[1].draw(win)
         if quadrantes[1] == 5:
-            img[1] = Image(Point(112.5,137.5), "marrom.gif")
+            img[1] = Image(Point(112.5,362.5), "marrom.gif")
             img[1].draw(win)
 
         if quadrantes[2] == 1:
-            img[2] = Image(Point(187.5,137.5),"carro1.gif")
+            img[2] = Image(Point(187.5,362.5),"carro1.gif")
             img[2].draw(win)
         if quadrantes[2] == 2:
-            img[2] = Image(Point(187.5,137.5), "bege.gif")
+            img[2] = Image(Point(187.5,362.5), "bege.gif")
             img[2].draw(win)
         if quadrantes[2] == 3:
-            img[2] = Image(Point(187.5,137.5), "cinza.gif")
+            img[2] = Image(Point(187.5,362.5), "cinza.gif")
             img[2].draw(win)
         if quadrantes[2] == 4:
-            img[2] = Image(Point(187.5,137.5), "carro2.gif")
+            img[2] = Image(Point(187.5,362.5), "carro2.gif")
             img[2].draw(win)
         if quadrantes[2] == 5:
-            img[2] = Image(Point(187.5,137.5), "marrom.gif")
+            img[2] = Image(Point(187.5,362.5), "marrom.gif")
             img[2].draw(win)
 
         if quadrantes[3] == 1:
-            img[3] = Image(Point(262.5,137.5),"carro1.gif")
+            img[3] = Image(Point(262.5,362.5),"carro1.gif")
             img[3].draw(win)
         if quadrantes[3] == 2:
-            img[3] = Image(Point(262.5,137.5), "bege.gif")
+            img[3] = Image(Point(262.5,362.5), "bege.gif")
             img[3].draw(win)
         if quadrantes[3] == 3:
-            img[3] = Image(Point(262.5,137.5), "cinza.gif")
+            img[3] = Image(Point(262.5,362.5), "cinza.gif")
             img[3].draw(win)
         if quadrantes[3] == 4:
-            img[3] = Image(Point(262.5,137.5), "carro2.gif")
+            img[3] = Image(Point(262.5,362.5), "carro2.gif")
             img[3].draw(win)
         if quadrantes[3] == 5:
-            img[3] = Image(Point(262.5,137.5), "marrom.gif")
+            img[3] = Image(Point(262.5,362.5), "marrom.gif")
             img[3].draw(win)
 
         if quadrantes[4] == 1:
-            img[4] = Image(Point(337.5,137.5),"carro1.gif")
+            img[4] = Image(Point(337.5,362.5),"carro1.gif")
             img[4].draw(win)
         if quadrantes[4] == 2:
-            img[4] = Image(Point(337.5,137.5), "bege.gif")
+            img[4] = Image(Point(337.5,362.5), "bege.gif")
             img[4].draw(win)
         if quadrantes[4] == 3:
-            img[4] = Image(Point(337.5,137.5), "cinza.gif")
+            img[4] = Image(Point(337.5,362.5), "cinza.gif")
             img[4].draw(win)
         if quadrantes[4] == 4:
-            img[4] = Image(Point(337.5,137.5), "carro2.gif")
+            img[4] = Image(Point(337.5,362.5), "carro2.gif")
             img[4].draw(win)
         if quadrantes[4] == 5:
-            img[4] = Image(Point(337.5,137.5), "marrom.gif")
+            img[4] = Image(Point(337.5,362.5), "marrom.gif")
             img[4].draw(win)
 
         if quadrantes[5] == 1:
-            img[5] = Image(Point(412.5,137.5),"carro1.gif")
+            img[5] = Image(Point(412.5,362.5),"carro1.gif")
             img[5].draw(win)
         if quadrantes[5] == 2:
-            img[5] = Image(Point(412.5,137.5), "bege.gif")
+            img[5] = Image(Point(412.5,362.5), "bege.gif")
             img[5].draw(win)
         if quadrantes[5] == 3:
-            img[5] = Image(Point(412.5,137.5), "cinza.gif")
+            img[5] = Image(Point(412.5,362.5), "cinza.gif")
             img[5].draw(win)
         if quadrantes[5] == 4:
-            img[5] = Image(Point(412.5,137.5), "carro2.gif")
+            img[5] = Image(Point(412.5,362.5), "carro2.gif")
             img[5].draw(win)
         if quadrantes[5] == 5:
-            img[5] = Image(Point(412.5,137.5), "marrom.gif")
+            img[5] = Image(Point(412.5,362.5), "marrom.gif")
             img[5].draw(win)
 
         if quadrantes[6] == 1:
-            img[6] = Image(Point(487.5,137.5),"carro1.gif")
+            img[6] = Image(Point(487.5,362.5),"carro1.gif")
             img[6].draw(win)
         if quadrantes[6] == 2:
-            img[6] = Image(Point(487.5,137.5), "bege.gif")
+            img[6] = Image(Point(487.5,362.5), "bege.gif")
             img[6].draw(win)
         if quadrantes[6] == 3:
-            img[6] = Image(Point(487.5,137.5), "cinza.gif")
+            img[6] = Image(Point(487.5,362.5), "cinza.gif")
             img[6].draw(win)
         if quadrantes[6] == 4:
-            img[6] = Image(Point(487.5,137.5), "carro2.gif")
+            img[6] = Image(Point(487.5,362.5), "carro2.gif")
             img[6].draw(win)
         if quadrantes[6] == 5:
-            img[6] = Image(Point(487.5,137.5), "marrom.gif")
+            img[6] = Image(Point(487.5,362.5), "marrom.gif")
             img[6].draw(win)
 
         if quadrantes[7] == 1:
-            img[7] = Image(Point(37.5,212.5), "carro1.gif")
+            img[7] = Image(Point(37.5,437.5), "carro1.gif")
             img[7].draw(win)
         if quadrantes[7] == 2:
-            img[7] = Image(Point(37.5,212.5), "bege.gif")
+            img[7] = Image(Point(37.5,437.5), "bege.gif")
             img[7].draw(win)
         if quadrantes[7] == 3:
-            img[7] = Image(Point(37.5,212.5), "cinza.gif")
+            img[7] = Image(Point(37.5,437.5), "cinza.gif")
             img[7].draw(win)
         if quadrantes[7] == 4:
-            img[7] = Image(Point(37.5,212.5), "carro2.gif")
+            img[7] = Image(Point(37.5,437.5), "carro2.gif")
             img[7].draw(win)
         if quadrantes[7] == 5:
-            img[7] = Image(Point(37.5,212.5), "marrom.gif")
+            img[7] = Image(Point(37.5,437.5), "marrom.gif")
             img[7].draw(win)
             
         if quadrantes[8] == 1:
-            img[8] = Image(Point(112.5,212.5),"carro1.gif")
+            img[8] = Image(Point(112.5,437.5),"carro1.gif")
             img[8].draw(win)
         if quadrantes[8] == 2:
-            img[8] = Image(Point(112.5,212.5), "bege.gif")
+            img[8] = Image(Point(112.5,437.5), "bege.gif")
             img[8].draw(win)
         if quadrantes[8] == 3:
-            img[8] = Image(Point(112.5,212.5), "cinza.gif")
+            img[8] = Image(Point(112.5,437.5), "cinza.gif")
             img[8].draw(win)
         if quadrantes[8] == 4:
-            img[8] = Image(Point(112.5,212.5), "carro2.gif")
+            img[8] = Image(Point(112.5,437.5), "carro2.gif")
             img[8].draw(win)
         if quadrantes[8] == 5:
-            img[8] = Image(Point(112.5,212.5), "marrom.gif")
+            img[8] = Image(Point(112.5,437.5), "marrom.gif")
             img[8].draw(win)
             
         if quadrantes[9] == 1:
-            img[9] = Image(Point(187.5,212.5),"carro1.gif")
+            img[9] = Image(Point(187.5,437.5),"carro1.gif")
             img[9].draw(win)
         if quadrantes[9] == 2:
-            img[9] = Image(Point(187.5,212.5), "bege.gif")
+            img[9] = Image(Point(187.5,437.5), "bege.gif")
             img[9].draw(win)
         if quadrantes[9] == 3:
-            img[9] = Image(Point(187.5,212.5), "cinza.gif")
+            img[9] = Image(Point(187.5,437.5), "cinza.gif")
             img[9].draw(win)
         if quadrantes[9] == 4:
-            img[9] = Image(Point(187.5,212.5), "carro2.gif")
+            img[9] = Image(Point(187.5,437.5), "carro2.gif")
             img[9].draw(win)
         if quadrantes[9] == 5:
-            img[9] = Image(Point(187.5,212.5), "marrom.gif")
+            img[9] = Image(Point(187.5,437.5), "marrom.gif")
             img[9].draw(win)
             
         if quadrantes[10] == 1:
-            img[10] = Image(Point(262.5,212.5), "carro1.gif")
+            img[10] = Image(Point(262.5,437.5), "carro1.gif")
             img[10].draw(win)
         if quadrantes[10] == 2:
-            img[10] = Image(Point(262.5,212.5), "bege.gif")
+            img[10] = Image(Point(262.5,437.5), "bege.gif")
             img[10].draw(win)
         if quadrantes[10] == 3:
-            img[10] = Image(Point(262.5,212.5), "cinza.gif")
+            img[10] = Image(Point(262.5,437.5), "cinza.gif")
             img[10].draw(win)
         if quadrantes[10] == 4:
-            img[10] = Image(Point(262.5,212.5), "carro2.gif")
+            img[10] = Image(Point(262.5,437.5), "carro2.gif")
             img[10].draw(win)
         if quadrantes[10] == 5:
-            img[10] = Image(Point(262.5,212.5), "marrom.gif")
+            img[10] = Image(Point(262.5,437.5), "marrom.gif")
             img[10].draw(win)
             
         if quadrantes[11] == 1:
-            img[11] = Image(Point(337.5,212.5), "carro1.gif")
+            img[11] = Image(Point(337.5,437.5), "carro1.gif")
             img[11].draw(win)
         if quadrantes[11] == 2:
-            img[11] = Image(Point(337.5,212.5), "bege.gif")
+            img[11] = Image(Point(337.5,437.5), "bege.gif")
             img[11].draw(win)
         if quadrantes[11] == 3:
-            img[11] = Image(Point(337.5,212.5), "cinza.gif")
+            img[11] = Image(Point(337.5,437.5), "cinza.gif")
             img[11].draw(win)
         if quadrantes[11] == 4:
-            img[11] = Image(Point(337.5,212.5), "carro2.gif")
+            img[11] = Image(Point(337.5,437.5), "carro2.gif")
             img[11].draw(win)
         if quadrantes[11] == 5:
-            img[11] = Image(Point(337.5,212.5), "marrom.gif")
+            img[11] = Image(Point(337.5,437.5), "marrom.gif")
             img[11].draw(win)
             
         if quadrantes[12] == 1:
-            img[12] = Image(Point(412.5,212.5), "carro1.gif")
+            img[12] = Image(Point(412.5,437.5), "carro1.gif")
             img[12].draw(win)
         if quadrantes[12] == 2:
-            img[12] = Image(Point(412.5,212.5), "bege.gif")
+            img[12] = Image(Point(412.5,437.5), "bege.gif")
             img[12].draw(win)
         if quadrantes[12] == 3:
-            img[12] = Image(Point(412.5,212.5), "cinza.gif")
+            img[12] = Image(Point(412.5,437.5), "cinza.gif")
             img[12].draw(win)
         if quadrantes[12] == 4:
-            img[12] = Image(Point(412.5,212.5), "carro2.gif")
+            img[12] = Image(Point(412.5,437.5), "carro2.gif")
             img[12].draw(win)
         if quadrantes[12] == 5:
-            img[12] = Image(Point(412.5,212.5), "marrom.gif")
+            img[12] = Image(Point(412.5,437.5), "marrom.gif")
             img[12].draw(win)
             
         if quadrantes[13] == 1:
-            img[13] = Image(Point(487.5,212.5), "carro1.gif")
+            img[13] = Image(Point(487.5,437.5), "carro1.gif")
             img[13].draw(win)
         if quadrantes[13] == 2:
-            img[13] = Image(Point(487.5,212.5), "bege.gif")
+            img[13] = Image(Point(487.5,437.5), "bege.gif")
             img[13].draw(win)
         if quadrantes[13] == 3:
-            img[13] = Image(Point(487.5,212.5), "cinza.gif")
+            img[13] = Image(Point(487.5,437.5), "cinza.gif")
             img[13].draw(win)
         if quadrantes[13] == 4:
-            img[13] = Image(Point(487.5,212.5), "carro2.gif")
+            img[13] = Image(Point(487.5,437.5), "carro2.gif")
             img[13].draw(win)
         if quadrantes[13] == 5:
-            img[13] = Image(Point(487.5,212.5), "marrom.gif")
+            img[13] = Image(Point(487.5,437.5), "marrom.gif")
             img[13].draw(win)
 
         if quadrantes[14] == 1:
-            img[14] = Image(Point(37.5,287.5), "carro1.gif")
+            img[14] = Image(Point(37.5,512.5), "carro1.gif")
             img[14].draw(win)
         if quadrantes[14] == 2:
-            img[14] = Image(Point(37.5,287.5), "bege.gif")
+            img[14] = Image(Point(37.5,512.5), "bege.gif")
             img[14].draw(win)
         if quadrantes[14] == 3:
-            img[14] = Image(Point(37.5,287.5), "cinza.gif")
+            img[14] = Image(Point(37.5,512.5), "cinza.gif")
             img[14].draw(win)
         if quadrantes[14] == 4:
-            img[14] = Image(Point(37.5,287.5), "carro2.gif")
+            img[14] = Image(Point(37.5,512.5), "carro2.gif")
             img[14].draw(win)
         if quadrantes[14] == 5:
-            img[14] = Image(Point(37.5,287.5), "marrom.gif")
+            img[14] = Image(Point(37.5,512.5), "marrom.gif")
             img[14].draw(win)
         if quadrantes[15] == 1:
-            img[15] = Image(Point(112.5,287.5), "carro1.gif")
+            img[15] = Image(Point(112.5,512.5), "carro1.gif")
             img[15].draw(win)
         if quadrantes[15] == 2:
-            img[15] = Image(Point(112.5,287.5), "bege.gif")
+            img[15] = Image(Point(112.5,512.5), "bege.gif")
             img[15].draw(win)
         if quadrantes[15] == 3:
-            img[15] = Image(Point(112.5,287.5), "cinza.gif")
+            img[15] = Image(Point(112.5,512.5), "cinza.gif")
             img[15].draw(win)
         if quadrantes[15] == 4:
-            img[15] = Image(Point(112.5,287.5), "carro2.gif")
+            img[15] = Image(Point(112.5,512.5), "carro2.gif")
             img[15].draw(win)
         if quadrantes[15] == 5:
-            img[15] = Image(Point(112.5,287.5), "marrom.gif")
+            img[15] = Image(Point(112.5,512.5), "marrom.gif")
             img[15].draw(win)
         if quadrantes[16] == 1:
-            img[16] = Image(Point(187.5,287.5),"carro1.gif")
+            img[16] = Image(Point(187.5,512.5),"carro1.gif")
             img[16].draw(win)
         if quadrantes[16] == 2:
-            img[16] = Image(Point(187.5,287.5), "bege.gif")
+            img[16] = Image(Point(187.5,512.5), "bege.gif")
             img[16].draw(win)
         if quadrantes[16] == 3:
-            img[16] = Image(Point(187.5,287.5), "cinza.gif")
+            img[16] = Image(Point(187.5,512.5), "cinza.gif")
             img[16].draw(win)
         if quadrantes[16] == 4:
-            img[16] = Image(Point(187.5,287.5), "carro2.gif")
+            img[16] = Image(Point(187.5,512.5), "carro2.gif")
             img[16].draw(win)
         if quadrantes[16] == 5:
-            img[16] = Image(Point(187.5,287.5), "marrom.gif")
+            img[16] = Image(Point(187.5,512.5), "marrom.gif")
             img[16].draw(win)
         if quadrantes[17] == 1:
-            img[17] = Image(Point(262.5,287.5), "carro1.gif")
+            img[17] = Image(Point(262.5,512.5), "carro1.gif")
             img[17].draw(win)
         if quadrantes[17] == 2:
-            img[17] = Image(Point(262.5,287.5), "bege.gif")
+            img[17] = Image(Point(262.5,512.5), "bege.gif")
             img[17].draw(win)
         if quadrantes[17] == 3:
-            img[17] = Image(Point(262.5,287.5), "cinza.gif")
+            img[17] = Image(Point(262.5,512.5), "cinza.gif")
             img[17].draw(win)
         if quadrantes[17] == 4:
-            img[17] = Image(Point(262.5,287.5), "carro2.gif")
+            img[17] = Image(Point(262.5,512.5), "carro2.gif")
             img[17].draw(win)
         if quadrantes[17] == 5:
-            img[17] = Image(Point(262.5,287.5), "marrom.gif")
+            img[17] = Image(Point(262.5,512.5), "marrom.gif")
             img[17].draw(win)
         if quadrantes[18] == 1:
-            img[18] = Image(Point(337.5,287.5), "carro1.gif")
+            img[18] = Image(Point(337.5,512.5), "carro1.gif")
             img[18].draw(win)
         if quadrantes[18] == 2:
-            img[18] = Image(Point(337.5,287.5), "bege.gif")
+            img[18] = Image(Point(337.5,512.5), "bege.gif")
             img[18].draw(win)
         if quadrantes[18] == 3:
-            img[18] = Image(Point(337.5,287.5), "cinza.gif")
+            img[18] = Image(Point(337.5,512.5), "cinza.gif")
             img[18].draw(win)
         if quadrantes[18] == 4:
-            img[18] = Image(Point(337.5,287.5), "carro2.gif")
+            img[18] = Image(Point(337.5,512.5), "carro2.gif")
             img[18].draw(win)
         if quadrantes[18] == 5:
-            img[18] = Image(Point(337.5,287.5), "marrom.gif")
+            img[18] = Image(Point(337.5,512.5), "marrom.gif")
             img[18].draw(win)
         elif quadrantes[19] == 1:
-            img[19] = Image(Point(412.5,287.5), "carro1.gif")
+            img[19] = Image(Point(412.5,512.5), "carro1.gif")
             img[19].draw(win)
         if quadrantes[19] == 2:
-            img[19] = Image(Point(412.5,287.5), "bege.gif")
+            img[19] = Image(Point(412.5,512.5), "bege.gif")
             img[19].draw(win)
         if quadrantes[19] == 3:
-            img[19] = Image(Point(412.5,287.5), "cinza.gif")
+            img[19] = Image(Point(412.5,512.5), "cinza.gif")
             img[19].draw(win)
         if quadrantes[19] == 4:
-            img[19] = Image(Point(412.5,287.5), "carro2.gif")
+            img[19] = Image(Point(412.5,512.5), "carro2.gif")
             img[19].draw(win)
         if quadrantes[19] == 5:
-            img[19] = Image(Point(412.5,287.5), "marrom.gif")
+            img[19] = Image(Point(412.5,512.5), "marrom.gif")
             img[19].draw(win)
             
         if quadrantes[20] == 1:
-            img[20] = Image(Point(487.5,287.5), "carro1.gif")
+            img[20] = Image(Point(487.5,512.5), "carro1.gif")
             img[20].draw(win)
         if quadrantes[20] == 2:
-            img[20] = Image(Point(487.5,287.5), "bege.gif")
+            img[20] = Image(Point(487.5,512.5), "bege.gif")
             img[20].draw(win)
         if quadrantes[20] == 3:
-            img[20] = Image(Point(487.5,287.5), "cinza.gif")
+            img[20] = Image(Point(487.5,512.5), "cinza.gif")
             img[20].draw(win)
         if quadrantes[20] == 4:
-            img[20] = Image(Point(487.5,287.5), "carro2.gif")
+            img[20] = Image(Point(487.5,512.5), "carro2.gif")
             img[20].draw(win)
         if quadrantes[20] == 5:
-            img[20] = Image(Point(487.5,287.5), "marrom.gif")
+            img[20] = Image(Point(487.5,512.5), "marrom.gif")
             img[20].draw(win)
 
         if quadrantes[21] == 1:
-            img[21] = Image(Point(37.5,362.5), "carro1.gif")
+            img[21] = Image(Point(37.5,587.5), "carro1.gif")
             img[21].draw(win)
         if quadrantes[21] == 2:
-            img[21] = Image(Point(37.5,362.5), "bege.gif")
+            img[21] = Image(Point(37.5,587.5), "bege.gif")
             img[21].draw(win)
         if quadrantes[21] == 3:
-            img[21] = Image(Point(37.5,362.5), "cinza.gif")
+            img[21] = Image(Point(37.5,587.5), "cinza.gif")
             img[21].draw(win)
         if quadrantes[21] == 4:
-            img[21] = Image(Point(37.5,362.5), "carro2.gif")
+            img[21] = Image(Point(37.5,587.5), "carro2.gif")
             img[21].draw(win)
         if quadrantes[21] == 5:
-            img[21] = Image(Point(37.5,362.5), "marrom.gif")
+            img[21] = Image(Point(37.5,587.5), "marrom.gif")
             img[21].draw(win)
         if quadrantes[22] == 1:
-            img[22] = Image(Point(112.5,362.5), "carro1.gif")
+            img[22] = Image(Point(112.5,587.5), "carro1.gif")
             img[22].draw(win)
         if quadrantes[22] == 2:
-            img[22] = Image(Point(112.5,362.5), "bege.gif")
+            img[22] = Image(Point(112.5,587.5), "bege.gif")
             img[22].draw(win)
         if quadrantes[22] == 3:
-            img[22] = Image(Point(112.5,362.5), "cinza.gif")
+            img[22] = Image(Point(112.5,587.5), "cinza.gif")
             img[22].draw(win)
         if quadrantes[22] == 4:
-            img[22] = Image(Point(112.5,362.5), "carro2.gif")
+            img[22] = Image(Point(112.5,587.5), "carro2.gif")
             img[22].draw(win)
         if quadrantes[22] == 5:
-            img[22] = Image(Point(112.5,362.5), "marrom.gif")
+            img[22] = Image(Point(112.5,587.5), "marrom.gif")
             img[22].draw(win)
         if quadrantes[23] == 1:
-            img[23] = Image(Point(187.5,362.5), "carro1.gif")
+            img[23] = Image(Point(187.5,587.5), "carro1.gif")
             img[23].draw(win)
         if quadrantes[23] == 2:
-            img[23] = Image(Point(187.5,362.5), "bege.gif")
+            img[23] = Image(Point(187.5,587.5), "bege.gif")
             img[23].draw(win)
         if quadrantes[23] == 3:
-            img[23] = Image(Point(187.5,362.5), "cinza.gif")
+            img[23] = Image(Point(187.5,587.5), "cinza.gif")
             img[23].draw(win)
         if quadrantes[23] == 4:
-            img[23] = Image(Point(187.5,362.5), "carro2.gif")
+            img[23] = Image(Point(187.5,587.5), "carro2.gif")
             img[23].draw(win)
         if quadrantes[23] == 5:
-            img[23] = Image(Point(187.5,362.5), "marrom.gif")
+            img[23] = Image(Point(187.5,587.5), "marrom.gif")
             img[23].draw(win)
         if quadrantes[24] == 1:
-            img[24] = Image(Point(262.5,362.5), "carro1.gif")
+            img[24] = Image(Point(262.5,587.5), "carro1.gif")
             img[24].draw(win)
         if quadrantes[24] == 2:
-            img[24] = Image(Point(262.5,362.5), "bege.gif")
+            img[24] = Image(Point(262.5,587.5), "bege.gif")
             img[24].draw(win)
         if quadrantes[24] == 3:
-            img[24] = Image(Point(262.5,362.5), "cinza.gif")
+            img[24] = Image(Point(262.5,587.5), "cinza.gif")
             img[24].draw(win)
         if quadrantes[24] == 4:
-            img[24] = Image(Point(262.5,362.5), "carro2.gif")
+            img[24] = Image(Point(262.5,587.5), "carro2.gif")
             img[24].draw(win)
         if quadrantes[24] == 5:
-            img[24] = Image(Point(262.5,362.5), "marrom.gif")
+            img[24] = Image(Point(262.5,587.5), "marrom.gif")
             img[24].draw(win)
         if quadrantes[25] == 1:
-            img[25] = Image(Point(337.5,362.5), "carro1.gif")
+            img[25] = Image(Point(337.5,587.5), "carro1.gif")
             img[25].draw(win)
         if quadrantes[25] == 2:
-            img[25] = Image(Point(337.5,362.5), "bege.gif")
+            img[25] = Image(Point(337.5,587.5), "bege.gif")
             img[25].draw(win)
         if quadrantes[25] == 3:
-            img[25] = Image(Point(337.5,362.5), "cinza.gif")
+            img[25] = Image(Point(337.5,587.5), "cinza.gif")
             img[25].draw(win)
         if quadrantes[25] == 4:
-            img[25] = Image(Point(337.5,362.5), "carro2.gif")
+            img[25] = Image(Point(337.5,587.5), "carro2.gif")
             img[25].draw(win)
         if quadrantes[25] == 5:
-            img[25] = Image(Point(337.5,362.5), "marrom.gif")
+            img[25] = Image(Point(337.5,587.5), "marrom.gif")
             img[25].draw(win)
         if quadrantes[26] == 1:
-            img[26] = Image(Point(412.5,362.5), "carro1.gif")
+            img[26] = Image(Point(412.5,587.5), "carro1.gif")
             img[26].draw(win)
         if quadrantes[26] == 2:
-            img[26] = Image(Point(412.5,362.5), "bege.gif")
+            img[26] = Image(Point(412.5,587.5), "bege.gif")
             img[26].draw(win)
         if quadrantes[26] == 3:
-            img[26] = Image(Point(412.5,362.5), "cinza.gif")
+            img[26] = Image(Point(412.5,587.5), "cinza.gif")
             img[26].draw(win)
         if quadrantes[26] == 4:
-            img[26] = Image(Point(412.5,362.5), "carro2.gif")
+            img[26] = Image(Point(412.5,587.5), "carro2.gif")
             img[26].draw(win)
         if quadrantes[26] == 5:
-            img[26] = Image(Point(412.5,362.5), "marrom.gif")
+            img[26] = Image(Point(412.5,587.5), "marrom.gif")
             img[26].draw(win)
         if quadrantes[27] == 1:
-            img[27] = Image(Point(487.5,362.5), "carro1.gif")
+            img[27] = Image(Point(487.5,587.5), "carro1.gif")
             img[27].draw(win)
         if quadrantes[27] == 2:
-            img[27] = Image(Point(487.5,362.5), "bege.gif")
+            img[27] = Image(Point(487.5,587.5), "bege.gif")
             img[27].draw(win)
         if quadrantes[27] == 3:
-            img[27] = Image(Point(487.5,362.5), "cinza.gif")
+            img[27] = Image(Point(487.5,587.5), "cinza.gif")
             img[27].draw(win)
         if quadrantes[27] == 4:
-            img[27] = Image(Point(487.5,362.5), "carro2.gif")
+            img[27] = Image(Point(487.5,587.5), "carro2.gif")
             img[27].draw(win)
         if quadrantes[27] == 5:
-            img[27] = Image(Point(487.5,362.5), "marrom.gif")
+            img[27] = Image(Point(487.5,587.5), "marrom.gif")
             img[27].draw(win)
 
         if quadrantes[28] == 1:
-            img[28] = Image(Point(37.5,437.5), "carro1.gif")
+            img[28] = Image(Point(37.5,662.5), "carro1.gif")
             img[28].draw(win)
         if quadrantes[28] == 2:
-            img[28] = Image(Point(37.5,437.5), "bege.gif")
+            img[28] = Image(Point(37.5,662.5), "bege.gif")
             img[28].draw(win)
         if quadrantes[28] == 3:
-            img[28] = Image(Point(37.5,437.5), "cinza.gif")
+            img[28] = Image(Point(37.5,662.5), "cinza.gif")
             img[28].draw(win)
         if quadrantes[28] == 4:
-            img[28] = Image(Point(37.5,437.5), "carro2.gif")
+            img[28] = Image(Point(37.5,662.5), "carro2.gif")
             img[28].draw(win)
         if quadrantes[28] == 5:
-            img[28] = Image(Point(37.5,437.5), "marrom.gif")
+            img[28] = Image(Point(37.5,662.5), "marrom.gif")
             img[28].draw(win)
         if quadrantes[29] == 1:
-            img[29] = Image(Point(112.5,437.5), "carro1.gif")
+            img[29] = Image(Point(112.5,662.5), "carro1.gif")
             img[29].draw(win)
         if quadrantes[29] == 2:
-            img[29] = Image(Point(112.5,437.5), "bege.gif")
+            img[29] = Image(Point(112.5,662.5), "bege.gif")
             img[29].draw(win)
         if quadrantes[29] == 3:
-            img[29] = Image(Point(112.5,437.5), "cinza.gif")
+            img[29] = Image(Point(112.5,662.5), "cinza.gif")
             img[29].draw(win)
         if quadrantes[29] == 4:
-            img[29] = Image(Point(112.5,437.5), "carro2.gif")
+            img[29] = Image(Point(112.5,662.5), "carro2.gif")
             img[29].draw(win)
         if quadrantes[29] == 5:
-            img[29] = Image(Point(112.5,437.5), "marrom.gif")
+            img[29] = Image(Point(112.5,662.5), "marrom.gif")
             img[29].draw(win)
         if quadrantes[30] == 1:
-            img[30] = Image(Point(187.5,437.5), "carro1.gif")
+            img[30] = Image(Point(187.5,662.5), "carro1.gif")
             img[30].draw(win)
         if quadrantes[30] == 2:
-            img[30] = Image(Point(187.5,437.5), "bege.gif")
+            img[30] = Image(Point(187.5,662.5), "bege.gif")
             img[30].draw(win)
         if quadrantes[30] == 3:
-            img[30] = Image(Point(187.5,437.5), "cinza.gif")
+            img[30] = Image(Point(187.5,662.5), "cinza.gif")
             img[30].draw(win)
         if quadrantes[30] == 4:
-            img[30] = Image(Point(187.5,437.5), "carro2.gif")
+            img[30] = Image(Point(187.5,662.5), "carro2.gif")
             img[30].draw(win)
         if quadrantes[30] == 5:
-            img[30] = Image(Point(187.5,437.5), "marrom.gif")
+            img[30] = Image(Point(187.5,662.5), "marrom.gif")
             img[30].draw(win)
         if quadrantes[31] == 1:
-            img[31] = Image(Point(262.5,437.5),"carro1.gif")
+            img[31] = Image(Point(262.5,662.5),"carro1.gif")
             img[31].draw(win)
         if quadrantes[31] == 2:
-            img[31] = Image(Point(262.5,437.5), "bege.gif")
+            img[31] = Image(Point(262.5,662.5), "bege.gif")
             img[31].draw(win)
         if quadrantes[31] == 3:
-            img[31] = Image(Point(262.5,437.5), "cinza.gif")
+            img[31] = Image(Point(262.5,662.5), "cinza.gif")
             img[31].draw(win)
         if quadrantes[31] == 4:
-            img[31] = Image(Point(262.5,437.5), "carro2.gif")
+            img[31] = Image(Point(262.5,662.5), "carro2.gif")
             img[31].draw(win)
         if quadrantes[31] == 5:
-            img[31] = Image(Point(262.5,437.5), "marrom.gif")
+            img[31] = Image(Point(262.5,662.5), "marrom.gif")
             img[31].draw(win)
         if quadrantes[32] == 1:
-            img[32] = Image(Point(337.5,437.5), "carro1.gif")
+            img[32] = Image(Point(337.5,662.5), "carro1.gif")
             img[32].draw(win)
         if quadrantes[32] == 2:
-            img[32] = Image(Point(337.5,437.5), "bege.gif")
+            img[32] = Image(Point(337.5,662.5), "bege.gif")
             img[32].draw(win)
         if quadrantes[32] == 3:
-            img[32] = Image(Point(337.5,437.5), "cinza.gif")
+            img[32] = Image(Point(337.5,662.5), "cinza.gif")
             img[32].draw(win)
         if quadrantes[32] == 4:
-            img[32] = Image(Point(337.5,437.5), "carro2.gif")
+            img[32] = Image(Point(337.5,662.5), "carro2.gif")
             img[32].draw(win)
         if quadrantes[32] == 5:
-            img[32] = Image(Point(337.5,437.5), "marrom.gif")
+            img[32] = Image(Point(337.5,662.5), "marrom.gif")
             img[32].draw(win)
         if quadrantes[33] == 1:
-            img[33] = Image(Point(412.5,437.5), "carro1.gif")
+            img[33] = Image(Point(412.5,662.5), "carro1.gif")
             img[33].draw(win)
         if quadrantes[33] == 2:
-            img[33] = Image(Point(412.5,437.5), "bege.gif")
+            img[33] = Image(Point(412.5,662.5), "bege.gif")
             img[33].draw(win)
         if quadrantes[33] == 3:
-            img[33] = Image(Point(412.5,437.5), "cinza.gif")
+            img[33] = Image(Point(412.5,662.5), "cinza.gif")
             img[33].draw(win)
         if quadrantes[33] == 4:
-            img[33] = Image(Point(412.5,437.5), "carro2.gif")
+            img[33] = Image(Point(412.5,662.5), "carro2.gif")
             img[33].draw(win)
         if quadrantes[33] == 5:
-            img[33] = Image(Point(412.5,437.5), "marrom.gif")
+            img[33] = Image(Point(412.5,662.5), "marrom.gif")
             img[33].draw(win)
         if quadrantes[34] == 1:
-            img[34] = Image(Point(487.5,437.5), "carro1.gif")
+            img[34] = Image(Point(487.5,662.5), "carro1.gif")
             img[34].draw(win)
         if quadrantes[34] == 2:
-            img[34] = Image(Point(487.5,437.5), "bege.gif")
+            img[34] = Image(Point(487.5,662.5), "bege.gif")
             img[34].draw(win)
         if quadrantes[34] == 3:
-            img[34] = Image(Point(487.5,437.5), "cinza.gif")
+            img[34] = Image(Point(487.5,662.5), "cinza.gif")
             img[34].draw(win)
         if quadrantes[34] == 4:
-            img[34] = Image(Point(487.5,437.5), "carro2.gif")
+            img[34] = Image(Point(487.5,662.5), "carro2.gif")
             img[34].draw(win)
         if quadrantes[34] == 5:
-            img[34] = Image(Point(487.5,437.5), "marrom.gif")
+            img[34] = Image(Point(487.5,662.5), "marrom.gif")
             img[34].draw(win)
         for g in range (3):  
         
